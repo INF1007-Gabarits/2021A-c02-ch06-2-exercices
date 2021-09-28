@@ -8,43 +8,19 @@ import itertools
 
 
 def get_even_keys(dictionary):
-	# Extraire les clés
-	# Extraire les clés paires
-	return {k for k in dictionary.keys() if k % 2 == 0}
+	return {}
 
 def join_dictionaries(dictionaries):
-	return {
-		key: value
-			for d in dictionaries
-				for key, value in d.items()
-	}
+	return {}
 
 def dictionary_from_lists(keys, values):
-	# Associer les clés et les valeurs.
-	# S'arrêter à la fin de la plus petite des deux listes.
-	#result = {}
-	#for i in range(min(len(keys), len(values))):
-	#	result[keys[i]] = values[i]
-	#return result
-	#return {keys[i]: values[i] for i in range(min(len(keys), len(values)))}
-	return dict(zip(keys, values))
+	return {}
 
-def get_greatest_values(dictionary, num_values):
-	# Extraire les valeurs
-	#vals = list(dictionary.values())
-	# Ordonner les valeurs
-	#vals = sorted(vals, reverse=True)
-	# Choisir les num_values plus grands
-	return sorted(dictionary.values(), reverse=True)[0:num_values]
+def get_greatest_values(dictionnary, num_values):
+	return []
 
-def get_sum_values_from_key(dictionaries, key):
-	# Extraire les valeurs associés à une clé
-	# Faire la somme des valeurs
-	#values = []
-	#for d in dictionaries:
-	#	if key in d:
-	#		values.append(d[key])
-	return sum([d[key] for d in dictionaries if key in d])
+def get_sum_values_from_key(dictionnaries, key):
+	return 0
 
 
 if __name__ == "__main__":
@@ -111,16 +87,3 @@ if __name__ == "__main__":
 	print(get_sum_values_from_key([bro1, bro2, bro3], "problems"))
 	print(get_sum_values_from_key([bro1, bro2, bro3], "money"))
 	print()
-
-	print("-" * 40)
-	print()
-	a = ("John", "Charles", "Mike")
-	b = ["Jenny", "Christy", "Monica"]
-	c = {"Mélissa", "Véronique", "Julie"}
-	for ai, bi, ci in zip(a, b, c):
-		print(f"{ai}, {bi}, {ci}")
-	#for z in zip(a, b, c):
-	#	for elem in z:
-	#		print(f"{elem} ", end="")
-	#	print()
-

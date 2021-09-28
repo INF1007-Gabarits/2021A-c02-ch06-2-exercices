@@ -31,6 +31,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="settings/test_associations.json" />
+    <Content Include="settings\files_to_update.txt" />
+    <Content Include="settings\variables.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="settings\" />
